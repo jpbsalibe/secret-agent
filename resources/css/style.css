@@ -310,11 +310,16 @@ footer {
     
     .contact {
         flex-wrap: wrap;
+        align-items: center;
     }
     
     .location,
     .hour {
         width: 90%;
+    }
+    
+    .location p {
+        padding-bottom: 0.5rem;
     }
     
     /*--- footer ---*/
