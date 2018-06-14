@@ -28,11 +28,15 @@ body {
 header {
     background-color: black;
     padding: 0.66rem;
+
+}
+
+.logo {
     align-items: center;
     justify-content: flex-start;
 }
 
-.logo {
+.logo-img {
     height: 1.5rem;
     padding-left: 0.5rem;
     padding-right: 1rem;
@@ -74,6 +78,8 @@ header p {
     padding-top: 0.25rem;
 }
 
+/*--- NAVIGATION BAR ---*/
+
 .menu {
     background-color: firebrick;
     padding: 0.75rem;
@@ -85,6 +91,12 @@ nav {
 
 nav span {
     font-weight: bold;
+}
+
+.devices {
+    visibility: hidden;
+    display: none;
+    font-family: Helvetica;
 }
 
 
@@ -104,7 +116,7 @@ nav span {
 
 .image {
     height: 9rem;
-    width: 50%;
+    width: auto;
     overflow: hidden;
     padding: 2rem 0;
 }
@@ -113,6 +125,10 @@ nav span {
     background-color: black;
     padding: 0.5rem;
     
+}
+
+.glasses {
+    width: auto;
 }
 
 /*--- CONTACT ---*/
@@ -154,11 +170,159 @@ footer {
 }
 
 
+/*--- MEDIA QUERIES ---*/
 
+    /*------ Tablet Size ------*/
 
+@media only screen and (max-width: 1024px) {
+        
+    /*--- banner ---*/
+    
+    .banner span {
+        font-size: 0.9rem;
+    }
+    
+    .banner h1 {
+        font-size: 1rem;
+    }
+        
+    
+    /*--- navigation bar ---*/
+    
+    .devices {
+        visibility: visible;
+        display: flex;
+        font-family: Helvetica;
+        font-weight: bold;
+    }
+            
+    .menu span {
+        visibility: hidden;
+        display: none;
+    }
+    
+    nav {
+        justify-content: center;
+    }
+    
+    
+    /*--- product grid ---*/
+    
+    .product {
+        width: 47%;
+    }
+    
+    
+    .glasses {
+        visibility: hidden;
+        display: none;
+    }
+    
+}
 
+    /*------ MOBILE SIZE ------*/
 
+@media only screen and (max-width: 470px) {
+    
 
+    /*--- container ---*/
+    
+    .container {
+        width: 100%;
+        margin: auto;
+        justify-content: center;
+    }
+    
+    /*--- logo ---*/
+    
+    header p {
+        visibility: hidden;
+        display: none;
+    }
+    
+    .logo {
+        justify-content: center;
+    }
+    
+    
+    /*--- banner ---*/
+    
+    .banner span {
+        font-size: 0.77rem;
+        font-weight: bold;
+    }
+    
+    .banner h1 {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    
+    .banner {
+        width: auto;
+        padding-top: 1rem;
+        padding-left: 2rem;
+        margin-top: 10rem;
+    }
+    
+    #main-banner {
+        height: 15rem;
+    }
+        
+    
+    /*--- navigation bar ---*/
+    
+    .devices {
+        visibility: visible;
+        display: flex;
+        font-family: Helvetica;
+        font-weight: bold;
+    }
+            
+    .menu span {
+        visibility: hidden;
+        display: none;
+    }
+    
+    nav {
+        justify-content: center;
+    }
+    
+    
+    /*--- product grid ---*/
+    
+    .product-grid {
+        margin: auto;
+    }
+    
+    .product {
+        width: 90%;
+        justify-content: center;
+    }
+    
+    
+    .glasses,
+    .watch {
+        visibility: hidden;
+        display: none;
+    }
+    
+    /*--- contact ---*/
+    
+    .contact {
+        flex-wrap: wrap;
+    }
+    
+    .location,
+    .hour {
+        width: 90%;
+    }
+    
+    /*--- footer ---*/
+    
+    footer {
+        text-align: center;
+    }
+}
 
 
 
